@@ -49,6 +49,7 @@ body{
     height: 100vh;
     background: radial-gradient(at top, var(--bg-grad1), var(--bg-grad2));
     color: #fff;
+    padding: 10px;
   }
 .scoreboard{
     display: flex;
@@ -63,7 +64,7 @@ body{
     letter-spacing: 2px;
 
     border-radius: 15px;
-    margin: 50px;
+    margin: 50px 10px;
     padding:1rem; 
     border: 2.6px rgba(255, 255, 255, 0.5)solid;
 
@@ -100,6 +101,7 @@ body{
     background: url(/original/images/bg-triangle.svg)no-repeat center center;
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  padding: 10px;
 }
 .choice-btn{
 
@@ -145,6 +147,7 @@ border: 8px solid red;
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: 1.3px;
+    padding: 10px;
 }
 .result .choice-btn{
     display: flex;
