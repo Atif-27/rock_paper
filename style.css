@@ -136,6 +136,7 @@ border: 8px solid red;
 
 /*! RESULT */
 .result{
+    position: absolute;
     display: none;
     align-items: center;
     justify-content: center;
@@ -259,8 +260,8 @@ border: 8px solid red;
             letter-spacing: 1px;
         }
         .result .choice-btn{
-            width: 150px;
-            height: 140px;
+            width: 140px;
+            height: 120px;
             margin:1rem 2rem;
         }
 }
