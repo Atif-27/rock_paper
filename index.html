@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/original/images/favicon-32x32.png">
+</head>
+<body>
+   <div class="gamecontainer">
+        <!--! Header -->
+          <div class="scoreboard">
+           <div class="logo">
+            <h1>Rock</h1>
+            <h1>Paper</h1>
+            <h1>Scissors</h1>
+           </div>
+            <div class="score">
+                <h3>Score</h3>
+                <h4></h5> </div>
+           </div>
+   
+
+       <!-- ! Game -->
+       <section class="game" id="">
+            <div class="paper choice"><button class="choice-btn"><img src="/original/images/icon-paper.svg" alt=""></button></div>
+            
+            <div class="scissors choice"><button class="choice-btn" data-choice="scissors"><img src="/original/images/icon-scissors.svg" alt=""></button></div>
+            
+            <div class="rock choice last">
+                <button class="choice-btn"><img src="/original/images/icon-rock.svg" alt=""></button>
+            </div>
+            
+       </section>
+
+       <!--! RESULT  -->
+       <section class="result" id="">
+        <div class="pick">
+            <h2>YOU PICKED</h2>
+            <div class="choice-btn">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="display">
+            <h2></h2>
+            <div class="play btn">PLAY AGAIN</div>
+        </div>
+        <div class="house">
+            <h2>HOUSE PICKED</h2>
+            <div class="choice-btn">
+                <img src="" alt="">
+            </div>
+        </div>
+       </section>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>

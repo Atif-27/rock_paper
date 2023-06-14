@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-grad1:hsl(214, 47%, 23%);
+    --bg-grad2: hsl(237, 49%, 15%);
+    ---color: hsl(228, 45%, 44%); ;
+}
+body{
+    position: relative;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    overflow:hidden;
+}
+.btn{
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 12px 10px;
+    background: #f0f2f4;
+    color: var(---color);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(---color);
+    color: #f0f2f4;
+    border: #f0f2f4 2px solid;
+    transform: scale(0.95);
+    border-radius: 20px;
+    letter-spacing: 8px;
+}
+#hide{
+    display: none;
+}
+#show{
+    display: flex;
+}
+/* ! SCOREBOARD */
+.gamecontainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(at top, var(--bg-grad1), var(--bg-grad2));
+    color: #fff;
+  }
+.scoreboard{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-width: 45vw;
+    overflow: hidden;
+    text-transform: uppercase;
+    line-height: 0.91;
+    font-size: 1.5rem;
+    font-weight:bolder;
+    letter-spacing: 2px;
+
+    border-radius: 15px;
+    margin: 50px;
+    padding:1rem; 
+    border: 2.6px rgba(255, 255, 255, 0.5)solid;
+
+}
+.logo{
+
+    padding-right: 2em;
+    flex: 3;
+}
+.score{
+    flex: 0;
+    background: #f0f2f4;
+    border-radius: 20px;
+    color: #000;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.score h3{
+    color: var(---color);
+}
+.score h4{
+    padding-top: 10px;
+    opacity: 0.7;
+    font-size: 2em;
+}
+
+
+
+
+.game{
+    background: url(/original/images/bg-triangle.svg)no-repeat center center;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.choice-btn{
+
+border: none;
+background: #f0f2f4;
+width: 250px;
+height: 230px;
+margin: 2rem 3.5rem;
+cursor: pointer;
+border-radius: 100%;
+border: 8px solid red;
+}
+.choice-btn img{
+   width: 60px;
+}
+
+.last{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Animation */
+.choice .choice-btn{
+    transform: translate3d(0px,0px,0px);
+    transition: all 0.2s ;
+}
+.choice .choice-btn:hover{
+    transform: translate3d(0px,-8px,0px);
+}
+
+
+/*! RESULT */
+.result{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+}
+.result .choice-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 260px;
+    margin:5rem 7rem;
+
+}
+.result img{
+    width: 80px;
+}
+
+@media(max-width:1500px){
+    .scoreboard{
+        min-width: 80%;
+    } 
+    .score h4{
+        padding-top: 7px;
+        opacity: 0.7;
+        font-size: 1.5em;
+    }
+    .choice-btn{
+        width: 210px;
+        height: 190px;
+        margin: 2rem 3.5rem;
+        }
+        .choice-btn img{
+           width: 60px;
+        }
+
+        /** RESULT */
+
+        .result{
+            font-size: 1.2rem;
+            letter-spacing: 1.3px;
+        }
+        .result .choice-btn{
+            width: 210px;
+            height: 190px;
+            margin:2rem 4rem;
+        }
+}
+@media(max-width:820px){
+         /** RESULT */
+         .score{
+            padding: 30px 30px;
+        }
+         .result{
+            font-size: 0.9rem;
+            letter-spacing: 0.4px;
+        }
+        .result .choice-btn{
+            width: 180px;
+            height: 160px;
+            margin:2rem 2rem;
+        }
+}
+
+@media(max-width:600px){
+    .scoreboard{
+        min-width: 70%;
+        font-size: 1.2rem;
+    } 
+    .score{
+        padding: 25px 25px;
+    }
+    .choice-btn{
+        width: 170px;
+        height: 150px;
+        margin: 4rem 2rem;
+        }
+        .choice-btn img{
+           width: 50px;
+        }
+
+        /** RESULT */
+        .scoreboard{
+            min-width: 70%;
+            font-size: 1rem;
+        } 
+        .result{
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        .score{
+            padding: 25px 25px;
+        }
+        .result .choice-btn{
+            width: 150px;
+            height: 130px;
+            margin:1rem 2rem;
+        }
+}
+@media(max-width:500px){
+    .scoreboard{
+        min-width: 80vw;
+        font-size: 0.9rem;
+    } 
+    .choice-btn{
+        width: 140px;
+        height: 120px;
+        margin: 3rem 1rem;
+        }
+        .choice-btn img{
+           width: 50px;
+        }
+
+        /** RESULT */
+
+        .result{
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        .result .choice-btn{
+            width: 150px;
+            height: 140px;
+            margin:1rem 2rem;
+        }
+}
