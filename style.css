@@ -136,10 +136,11 @@ border: 8px solid red;
 
 /*! RESULT */
 .result{
+    top: 20vh;
     position: absolute;
+    overflow: hidden;
     display: none;
     align-items: center;
-    justify-content: center;
     height: 50vh;
     text-align: center;
     font-size: 1.5rem;
@@ -247,7 +248,7 @@ border: 8px solid red;
     .choice-btn{
         width: 140px;
         height: 120px;
-        margin: 3rem 1rem;
+        margin: rem 1rem;
         }
         .choice-btn img{
            width: 50px;
