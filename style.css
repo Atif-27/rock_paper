@@ -139,8 +139,6 @@ border: 8px solid red;
 /*! RESULT */
 .result{
     top: 20vh;
-    position: absolute;
-    overflow: hidden;
     display: none;
     align-items: center;
     height: 50vh;
