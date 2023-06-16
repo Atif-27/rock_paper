@@ -40,7 +40,7 @@ body{
     display: flex;
 }
 
-/* ! SCOREBOARD */
+
 .gamecontainer {
     overflow: hidden;  /** hidden */
     position: relative;
@@ -55,6 +55,7 @@ body{
     color: #fff;
     padding: 40px;
   }
+/* ! SCOREBOARD */
 .scoreboard{
     position: absolute;
     display: flex;
@@ -67,7 +68,7 @@ body{
     font-size: 1.5rem;
     font-weight:bolder;
     letter-spacing: 2px;
-
+    margin-bottom: 1100px;
     border-radius: 15px;
     margin: 50px 10px;
     padding:1rem; 
@@ -268,5 +269,11 @@ border: 8px solid red;
             height: 100px;
             margin:2rem 1rem;
         }
+        .display
+        {
+            flex-basis: 100%;
+        }
 }
-@media(max-width:400px)
+@media(max-width:400px){
+
+}
