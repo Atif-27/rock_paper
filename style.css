@@ -9,7 +9,13 @@
 :root{
     --bg-grad1:hsl(214, 47%, 23%);
     --bg-grad2: hsl(237, 49%, 15%);
-    ---color: hsl(228, 45%, 44%); ;
+    ---color: hsl(228, 45%, 44%); 
+    --scissors-1: hsl(39, 89%, 49%);
+    --scissors-2: hsl(40, 84%, 53%);
+    --paper-1: hsl(230, 89%, 62%);
+    --paper-2: hsl(230, 89%, 65%);
+    --rock-1: hsl(349, 71%, 52%);
+    --rock-2: hsl(349, 70%, 56%);
 }
 body{
     /* position: relative; */
@@ -252,7 +258,7 @@ border: 8px solid red;
     .choice-btn{
         width: 140px;
         height: 120px;
-        margin: rem 1rem;
+        margin:  1rem;
         }
         .choice-btn img{
            width: 50px;

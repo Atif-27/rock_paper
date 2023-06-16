@@ -28,6 +28,7 @@ function rockOnClick(){
     hideshow();
     yourPick.setAttribute('src',rock);
     house();
+    document.querySelector('.result .choice-btn').classList.add('class','borderR')
 }
 function paperOnClick(){
     mynum=2;
@@ -35,6 +36,7 @@ function paperOnClick(){
     hideshow();
     yourPick.setAttribute('src',paper);
     house();
+    document.querySelector('.result .choice-btn').classList.add('class','borderP')
 }
 function scissorsOnClick(){
     mynum=3;
@@ -42,6 +44,7 @@ function scissorsOnClick(){
     hideshow();
     yourPick.setAttribute('src',scissors);
     house();
+    document.querySelector('.result .choice-btn').classList.add('class','borderS')
 }
 // ! TRANSITION OF SCREEN
 function hideshow(){
@@ -69,23 +72,29 @@ function house(){
     if(hnum===1)
     {
         showRock();
+
     }
     else if(hnum===2)
     {
         showPaper();
+
     }
     else{
         showScissors();
+   
     }
 }
 function showRock(){
     housePick.setAttribute('src',rock);
+    document.querySelector('.house .choice-btn').classList.add('class','borderR')
 }
 function showPaper(){
     housePick.setAttribute('src',paper);
+    document.querySelector('.house .choice-btn').classList.add('class','borderP')
 }
 function showScissors(){
     housePick.setAttribute('src',scissors);
+    document.querySelector('.house .choice-btn').classList.add('class','borderS')
 }
 
 
@@ -125,6 +134,8 @@ function playAgain(){
     document.querySelector('.game').removeAttribute('id','hide');
     document.querySelector('.result').removeAttribute('id','show');
     console.log('removed')
+    document.querySelector('.result .choice-btn').classList="choice-btn";
+    document.querySelector('.house .choice-btn').classList="choice-btn";
 }
 
 // ! SCORE
