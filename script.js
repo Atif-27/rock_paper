@@ -1,9 +1,9 @@
 // document.querySelector('.choice').addEventListener('click',house);
 let score=0;
 //! Events
-document.querySelector('.game .rock').addEventListener('click',rockOnClick);
-document.querySelector('.game .scissors').addEventListener('click',scissorsOnClick);
-document.querySelector('.game .paper').addEventListener('click',paperOnClick);
+document.querySelector('.game .rock button').addEventListener('click',rockOnClick);
+document.querySelector('.game .scissors button').addEventListener('click',scissorsOnClick);
+document.querySelector('.game .paper button').addEventListener('click',paperOnClick);
 document.querySelector('.play').addEventListener('click',playAgain);
 document.addEventListener('DOMContentLoaded',showScore);
 

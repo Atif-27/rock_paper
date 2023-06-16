@@ -436,9 +436,9 @@ body{
     padding-right: 10px;
 }
 .choice-btn{
-    width: 100px;
-    height: 80px;
-    margin: 5rem;
+    width: 140px;
+    height: 120px;
+    margin:3rem 2rem;
     }
     .choice-btn img{
        width: 34px;
@@ -461,6 +461,7 @@ body{
     display: grid;
     justify-content: center;
     width: 100%;
+    padding: 15px 0px;
 }
 
 .pick{
@@ -473,10 +474,10 @@ body{
     order: 2;
 }
 .display{
-    margin: 1rem 0 ;
+    margin: 1rem 0rem ;
     font-size: 1rem;
 }
 .display .btn{
-   width: 100%;
+   padding: 5px;
 }
 }
